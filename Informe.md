@@ -45,7 +45,6 @@ docker volume create wordpress-db-data
 ## Evidencia:
 <imag!![imagen 2](https://github.com/user-attachments/assets/919f21aa-fd1a-445c-baf0-1cc2453b05ba)
 
-
 ### Paso 3: Crear el contenedor de MySQL.
 ````
 docker run -d --name mysql-container \
@@ -58,7 +57,8 @@ docker run -d --name mysql-container \
   mysql:5.7
 ````
 ## Evidencia:
-<imag!![imagen 3](https://github.com/user-attachments/assets/8c35ec19-d11f-406e-b36f-eeaa27d09565)
+<imag!![Uploading imagen 3.1.jpg…]()
+
 
 ### Paso 4: Crear el contenedor de phpMyAdmin
 ````
