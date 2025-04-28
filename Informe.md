@@ -1,5 +1,4 @@
-# Instalación del Subsistema de Windows para Linux (WSL) y Configuración de Ubuntu como Entorno de Desarrollo Web con Angular.
-
+# Wordpres con contendores.
 ## 1. Tiempo de duración:
   El tiempo estimado para la realización de este proyecto es de 1 hora.
 ## 2. Fundamentos:
@@ -31,14 +30,14 @@ Para llevar a cabo este proyecto, es recomendable tener conocimientos básicos d
 - Documentación de WordPress: https://wordpress.org/support/
 - phpMyAdmin: https://www.phpmyadmin.net/
 ## 8. Procedimiento:
-### Paso 1: Crear una red personalizada de Docker
+### Paso 1: Crear una red personalizada de Docker.
 ```
 docker network create wordpress-net
 ````
 ## Evidencia:
 <imag!![imagen 1](https://github.com/user-attachments/assets/add83a98-e42e-4fcd-abcc-36b3ce1c4479)
 
-### Paso 2: Crear un volumen para MySQL
+### Paso 2: Crear un volumen para MySQL.
 ```
 docker volume create wordpress-db-data
 ````
@@ -59,9 +58,7 @@ docker run -d --name mysql-container \
 ## Evidencia:
 <imag!![imagen 3 1](https://github.com/user-attachments/assets/2948a672-7b03-4e1c-adcf-8c26ecf3cdf7)
 
-
-
-### Paso 4: Crear el contenedor de phpMyAdmin
+### Paso 4: Crear el contenedor de phpMyAdmin.
 ````
 docker run -d --name phpmyadmin-container \
   --network wordpress-net \
@@ -73,7 +70,7 @@ docker run -d --name phpmyadmin-container \
 ## Evidencia:
 <imag!![imagen 4](https://github.com/user-attachments/assets/fec6ab9c-35bb-430a-a058-5ba8bc53eb14)
 
-### Paso 5: Crear el contenedor de WordPress
+### Paso 5: Crear el contenedor de WordPress.
 ````
 docker run -d --name wordpress-container \
   --network wordpress-net \
