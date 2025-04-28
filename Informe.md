@@ -36,13 +36,15 @@ Para llevar a cabo este proyecto, es recomendable tener conocimientos básicos d
 docker network create wordpress-net
 ````
 ## Evidencia:
-<imag!
+<imag!![imagen 1](https://github.com/user-attachments/assets/add83a98-e42e-4fcd-abcc-36b3ce1c4479)
+
 ### Paso 2: Crear un volumen para MySQL
 ```
 docker volume create wordpress-db-data
 ````
 ## Evidencia:
-<imag!
+<imag!![imagen 2](https://github.com/user-attachments/assets/919f21aa-fd1a-445c-baf0-1cc2453b05ba)
+
 
 ### Paso 3: Crear el contenedor de MySQL.
 ````
@@ -56,7 +58,7 @@ docker run -d --name mysql-container \
   mysql:5.7
 ````
 ## Evidencia:
-<imag!
+<imag!![imagen 3](https://github.com/user-attachments/assets/8c35ec19-d11f-406e-b36f-eeaa27d09565)
 
 ### Paso 4: Crear el contenedor de phpMyAdmin
 ````
@@ -68,7 +70,7 @@ docker run -d --name phpmyadmin-container \
   phpmyadmin/phpmyadmin
 ````
 ## Evidencia:
-<imag!
+<imag!![imagen 4](https://github.com/user-attachments/assets/fec6ab9c-35bb-430a-a058-5ba8bc53eb14)
 
 ### Paso 5: Crear el contenedor de WordPress
 ````
@@ -82,16 +84,17 @@ docker run -d --name wordpress-container \
   wordpress
 ````
 ## Evidencia:
-<imag!
-
+<imag!![imagen 5](https://github.com/user-attachments/assets/3b592fdc-d83f-45a0-90da-2f59d9e97840)
 
 ## 9. Resultados esperados:
 - Un contenedor de WordPress accesible en http://localhost:8081.
 - Un contenedor de phpMyAdmin accesible en http://localhost:8080 para gestionar la base de datos.
 - La base de datos de WordPress debe estar configurada y operativa.
-
 ## Evidencia:
-<imag!
+<imag!![resultados ](https://github.com/user-attachments/assets/fa22012d-df65-4976-9573-fb5a648a65bc)
+
+<imag!![resultados](https://github.com/user-attachments/assets/ded455b7-8cfe-4c8e-9412-837f71a28dbd)
+
 ## 10. Conclusión:
 En este proyecto, se ha logrado configurar un entorno de desarrollo para WordPress utilizando Docker, lo que ha permitido crear un sistema eficiente, aislado y fácil de gestionar. La utilización de contenedores ha proporcionado una solución escalable y replicable, facilitando tanto la implementación como el mantenimiento de los servicios involucrados, como MySQL y phpMyAdmin.
 
