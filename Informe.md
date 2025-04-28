@@ -57,7 +57,8 @@ docker run -d --name mysql-container \
   mysql:5.7
 ````
 ## Evidencia:
-<imag!![Uploading imagen 3.1.jpg…]()
+<imag!![imagen 3 1](https://github.com/user-attachments/assets/2948a672-7b03-4e1c-adcf-8c26ecf3cdf7)
+
 
 
 ### Paso 4: Crear el contenedor de phpMyAdmin
